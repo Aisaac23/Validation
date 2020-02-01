@@ -66,10 +66,10 @@ bool isUnsignedInteger(char* number)
 	if(number == NULL)
 		return false;
 
+	int len = strlen(number);
  	if(len == 0)
 		return false;
 	
-	int len = strlen(number);
 	for( int index = 0; index < len; index++ )
 		if( !isdigit(number[index]) )
 			return false;
@@ -182,10 +182,11 @@ bool isAlphabeticString(char* word)
 	if(word == NULL)
 		return false;
 
+	int len = strlen(word);
  	if(len == 0)
 		return false;
 
-	int len = strlen(word);
+
 	for( int index = 0; index < len; index++ )
 		if( !isalpha(word[index]) )
 			return false;
@@ -198,10 +199,11 @@ bool isAlphaNumericString(char* word)
 	if(word == NULL)
 		return false;
 
+	int len = strlen(word);
  	if(len == 0)
 		return false;
 
-	int len = strlen(word);
+	
 	for( int index = 0; index < len; index++ )
 		if( !isalnum(word[index]) )
 			return false;
