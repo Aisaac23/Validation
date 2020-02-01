@@ -17,3 +17,19 @@ Bellow you'll find what you can do with them:
 	*	First checks whether passed argument is a valid number and then checks if it's a UNSIGNED float number
 *	bool isSignedFloat(char* number)
 	*	First checks whether passed argument is a valid number and then checks if it's a SIGNED float number
+*	bool fileExists(char* fileName)
+	*	Checks whether the passed file name exists and if it exists also checks if it can be opened.
+*	bool isFileName(char* fileName)
+	*	Checks whether the passed file name is valid, this, by trying to open it in append mode.
+*	bool isAlphabeticString(char* word)
+	*	Checks whether the passed word consists only of letters and returns false on any occurrence of any other character. 
+*	bool isAlphaNumericString(char* word)
+	*	Checks whether the passed word consists only of letters and numbers; returns false on any occurrence of any other character. 
+
+*	bool hasWideChars(wchar_t *word)
+	*	Checks whether the passed word consists only of ASCII characters; returns false on any occurrence of any character with a value grater than 127
+
+*	void setAvailableOptions(char **options, char *optionsString)
+	*	Receives a char pointer to a pointer where the options will be set in the same order they apear in the second passed argument "optionsString".
+"char **options" should be initilized at least with n pointers (e.g. char *options[20]) before passing it and "optionsString" can be any string*/
+
